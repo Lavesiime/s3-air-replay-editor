@@ -1,0 +1,11 @@
+idstring "S3AIRREC\x05"
+get waste long
+get waste2 long
+get waste3 long
+get entryCount long
+for i = 0 < entryCount
+    math pointer = i
+    math pointer * 14
+    math pointer + 0x19
+    log "" pointer 14
+next i
